@@ -24,7 +24,7 @@ str_3 = "*&%@#!}{"
 
 # function to check if a string contains any non-alphanumeric chars
 def check_string(str_check):
-    print("str: " + str_check)
+    print("string: " + str_check)
     # find all occurrences of non-alphanumeric chars in the string as a list
     list_result = re.findall('[^a-zA-Z0-9]', str_check)
     # if the length of the list is equal to zero then no non-alphanumeric
@@ -37,6 +37,8 @@ def check_string(str_check):
         print("The string contains non_alphanumeric chars: " + str(list_result))
     print()
 
+# program purpose
+print("The program will check if a string contains any non-alphanumeric characters.\n")
 # call the check_string() function for each of the three test strings
 check_string(str_1)
 check_string(str_2)
